@@ -13,20 +13,20 @@ local CurGame = { --Список игр и их ID (Скоро будет бол
 }
 local CurGame = Games[game.PlaceId] --Переход к списку и проверка по ID
 if CurGame == nil then --Если игра не найдена в списке то загружается общее
-  loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Aitekus/ROBLOX-NIKITOS/refs/heads/main/Main/main.lua"))() --Это и есть общее
+  loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/DaHawakere/DaScript/refs/heads/main/Main/main.lua"))() --Это и есть общее
 end
 if not CurGame == nil then --Если игра найдена в списке то загружается нужный скрипт
     local Loadstringlinks = { --Список игр ссылок на скрипты для игр
-    ["Fisch"] = "https://raw.githubusercontent.com/Aitekus/ROBLOX-NIKITOS/refs/heads/main/Experiences/1-Experience/Fisch.lua",
-    ["BABFT"] = "https://raw.githubusercontent.com/Aitekus/ROBLOX-NIKITOS/refs/heads/main/Experiences/1-Experience/Build%20a%20boat%20for%20treasure.lua",
-    ["TSB"] = "https://raw.githubusercontent.com/Aitekus/ROBLOX-NIKITOS/refs/heads/main/Experiences/1-Experience/The%20strongest%20battlegrounds.lua",
-    ["BB"] = "https://raw.githubusercontent.com/Aitekus/ROBLOX-NIKITOS/refs/heads/main/Experiences/1-Experience/Blade%20ball.lua",
-    ["Dr_L"] = "https://raw.githubusercontent.com/Aitekus/ROBLOX-NIKITOS/refs/heads/main/Experiences/2-Experience/Dead%20rails%20-%20В%20лобби.lua",
-    ["Dr_G"] = "https://raw.githubusercontent.com/Aitekus/ROBLOX-NIKITOS/refs/heads/main/Experiences/2-Experience/Dead%20rails%20-%20В%20игре.lua",
-    ["Doors_L"] = "https://raw.githubusercontent.com/Aitekus/ROBLOX-NIKITOS/refs/heads/main/Experiences/2-Experience/Doors%20-%20В%20лобби.lua",
-    ["Doors_G"] = "https://raw.githubusercontent.com/Aitekus/ROBLOX-NIKITOS/refs/heads/main/Experiences/2-Experience/Doors%20-%20В%20игре.lua",
-    ["Grace_L"] = "https://raw.githubusercontent.com/Aitekus/ROBLOX-NIKITOS/refs/heads/main/Experiences/2-Experience/Grace%20-%20В%20лобби.lua",
-    ["Grace_G"] = "https://raw.githubusercontent.com/Aitekus/ROBLOX-NIKITOS/refs/heads/main/Experiences/2-Experience/Grace%20-%20В%20игре.lua"
+    ["Fisch"] = "https://raw.githubusercontent.com/DaHawakere/DaScript/refs/heads/main/Experiences/1-Experience/Fisch.lua",
+    ["BABFT"] = "https://raw.githubusercontent.com/DaHawakere/DaScript/refs/heads/main/Experiences/1-Experience/Build%20a%20boat%20for%20treasure.lua",
+    ["TSB"] = "https://raw.githubusercontent.com/DaHawakere/DaScript/refs/heads/main/Experiences/1-Experience/The%20strongest%20battlegrounds.lua",
+    ["BB"] = "https://raw.githubusercontent.com/DaHawakere/DaScript/refs/heads/main/Experiences/1-Experience/Blade%20ball.lua",
+    ["Dr_L"] = "https://raw.githubusercontent.com/DaHawakere/DaScript/refs/heads/main/Experiences/2-Experience/Dead%20rails%20-%20В%20лобби.lua",
+    ["Dr_G"] = "https://raw.githubusercontent.com/DaHawakere/DaScript/refs/heads/main/Experiences/2-Experience/Dead%20rails%20-%20В%20игре.lua",
+    ["Doors_L"] = "https://raw.githubusercontent.com/DaHawakere/DaScript/refs/heads/main/Experiences/2-Experience/Doors%20-%20В%20лобби.lua",
+    ["Doors_G"] = "https://raw.githubusercontent.com/DaHawakere/DaScript/refs/heads/main/Experiences/2-Experience/Doors%20-%20В%20игре.lua",
+    ["Grace_L"] = "https://raw.githubusercontent.com/DaHawakere/DaScript/refs/heads/main/Experiences/2-Experience/Grace%20-%20В%20лобби.lua",
+    ["Grace_G"] = "https://raw.githubusercontent.com/DaHawakere/DaScript/refs/heads/main/Experiences/2-Experience/Grace%20-%20В%20игре.lua"
     }
 end
 local Loadstringlink = Loadstringlinks[CurGame] --Переменная на ссылку скрипта
