@@ -1,9 +1,10 @@
-warn("NIKITOS // Привет!") -- Выводит приветственное сообщение в консоль
+warn("DaScript // Привет!") -- Выводит приветственное сообщение в консоль
+gamename = ""
 
 -- Загружаем необходимые библиотеки
 local Library = loadstring(game:HttpGetAsync("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau"))() -- Библиотека Fluent для создания интерфейса
-local SaveManager = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Aitekus/ROBLOX-NIKITOS/refs/heads/main/Main/Modules/SaveManager_RU.lua"))() -- Модуль для сохранений
-local InterfaceManager = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Aitekus/ROBLOX-NIKITOS/refs/heads/main/Main/Modules/InterfaceManager_RU.lua"))() -- Модуль для управления интерфейсом
+local SaveManager = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/DaHawakere/DaScript/refs/heads/main/Main/Modules/SaveManager_RU.lua"))() -- Модуль для сохранений
+local InterfaceManager = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/DaHawakere/DaScript/refs/heads/main/Main/Modules/InterfaceManager_RU.lua"))() -- Модуль для управления интерфейсом
 
 -- Информация о текущем игроке
 local Player = game.Players.LocalPlayer -- Игрок
@@ -13,7 +14,7 @@ local PlayerHuma = PlayerChar.Humanoid -- Humanoid (человекоподобн
 
 -- Создание окна интерфейса с использованием Fluent
 local Window = Library:CreateWindow{ 
-    Title = "NIKITOS // Общее", -- Заголовок окна
+    Title = "DaScript // " .. gamename, -- Заголовок окна
     SubTitle = "Придумай сам что тут написано...", -- Подзаголовок окна
     TabWidth = 160, -- Ширина вкладки
     Size = UDim2.fromOffset(830, 525), -- Размер окна
@@ -51,7 +52,7 @@ Library:Notify{
 -- Создание параграфов с информацией в вкладке Main
 local MainParagraph = Tabs.Main:CreateParagraph("MainParagraph", {
     Title = "Здраствуй, " .. PlayerName, -- Заголовок параграфа
-    Content = "Игра: " .. "dfsyqeweasdhuzshfyu" .. "\nИнфa:\nXП - " .. PlayerHuma.Health .. "/" .. PlayerHuma.MaxHealth .. " Скорость - " .. PlayerHuma.WalkSpeed .. " Сила прыжка - " .. PlayerHuma.JumpPower, -- Контент параграфа
+    Content = "Игра: " .. "uhh hey paparys? i burnt the water. sans how the fuck did you even burn the water? i dont know bro it just caught on fire. sans oh my gosh the entire kitchen is on fire. im sorry bro i cant cook. sans you motherfuck-" .. "\nИнфa:\nXП - " .. PlayerHuma.Health .. "/" .. PlayerHuma.MaxHealth .. " Скорость - " .. PlayerHuma.WalkSpeed .. " Сила прыжка - " .. PlayerHuma.JumpPower, -- Контент параграфа
 })
 
 -- Кнопка для загрузки Plutonium Hub с подтверждением
