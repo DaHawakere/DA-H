@@ -9,3 +9,5 @@
 Скрипт работает: Я хз вообще, не могу чекнуть
 
 Loadstring: loadstring(game:HttpGet("https://github.com/DaHawakere/DaScript/blob/main/Experiences/loader.lua"))()
+
+Поддержать меня: https://link-hub.net/1359354/gQS1uKcZL6B4
