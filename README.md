@@ -1,9 +1,9 @@
-# DaScript
+# DA-H
 
-[Библиотека для визуала](https://github.com/ActualMasterOogway)
-[Библиотека с иконками 1](https://lucide.dev/icons/) 
-[Библиотека с иконками 2](https://phosphoricons.com/)
-[Plutonium Hub](https://github.com/PawsThePaw)
+[Библиотека для визуала](https://github.com/ActualMasterOogway)<br>
+[Библиотека с иконками 1](https://lucide.dev/icons/)<br>
+[Библиотека с иконками 2](https://phosphoricons.com/)<br>
+[Plutonium Hub](https://github.com/PawsThePaw)<br>
 [BlackKing Hub](https://github.com/KINGHUB01)
 
 # А что по инфе?
