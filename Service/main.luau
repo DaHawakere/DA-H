@@ -11,6 +11,7 @@ local Player = game.Players.LocalPlayer -- Игрок
 local PlayerName = Player.Name -- Имя игрока
 local PlayerChar = Player.Character -- Персонаж игрока
 local PlayerHuma = PlayerChar.Humanoid -- Humanoid
+local PlayRig = PlayerHuma.RigType --Rigtype R6/R15
 
 -- Создание окна интерфейса с использованием Fluent
 local Window = Library:CreateWindow{ 
@@ -52,7 +53,7 @@ Library:Notify{
 -- Создание параграфов с информацией в вкладке Main
 local MainParagraph = Tabs.Main:CreateParagraph("MainParagraph", {
     Title = "Здраствуй, " .. PlayerName, -- Заголовок параграфа
-    Content = "Игра: " .. "Мы не знаем" .. "\nИнфa:\nXП - " .. PlayerHuma.Health .. "/" .. PlayerHuma.MaxHealth .. " Скорость - " .. PlayerHuma.WalkSpeed .. " Сила прыжка - " .. PlayerHuma.JumpPower, -- Контент параграфа
+    Content = "Игра: " .. "Не поддерживается" .. "\nИнфa:\nXП - " .. PlayerHuma.Health .. "/" .. PlayerHuma.MaxHealth .. " Скорость - " .. PlayerHuma.WalkSpeed .. " Сила прыжка - " .. PlayerHuma.JumpPower, -- Контент параграфа
 })
 
 -- Кнопка для загрузки Plutonium Hub с подтверждением
@@ -112,15 +113,15 @@ Tabs.Loader:CreateButton{
 -- Кнопка для выдачи предмета
 Tabs.Main:Button({ 
     Title = "Выдать предмет на дрочку", 
-    Description = "💕", 
+    Description = "Работает с R6/R15", 
     Callback = function() 
-        loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))() -- Загрузка скрипта
+        if PlayRig == Enum.HumanoidRigType.R6 then R6: loadstring(game:HttpGet("https://pastefy.app/wa3v2Vgm/raw"))() else loadstring(game:HttpGet("https://pastefy.app/YZoglOyJ/raw"))() end -- Загрузка скрипта для R6/R15
     end
 })
 
 
 
-local FBToggle_T = Tabs.Main:CreateToggle("FBToggle_T", {Title = "Светлота", Default = false })
+local FBToggle_T = Tabs.Main:CreateToggle("FBToggle_T", {Title = "Светлота - Fullbright", Default = false })
 
 -- Старые значения для освещения
 local OldBrightness = game.Lighting.Brightness
@@ -175,20 +176,6 @@ local ParagraphDrygoe = Tabs.Main:CreateParagraph("ParagraphDrygoe", {
     ContentAlignment = Enum.TextXAlignment.Center 
 })
 
--- Кнопка для копирования Telegram
-Tabs.Main:Button({ 
-    Title = "Есть что сказать?", 
-    Description = "Скопировать Telegram", 
-    Callback = function() 
-        if setclipboard then
-            setclipboard("@Chelik_Chepubelik") --Тг
-            NotifyCopy(true)
-        else
-            NotifyCopy(false)
-        end 
-    end
-})
-
 -- Сохранение и настройка менеджеров интерфейса и сохранений
 SaveManager:SetLibrary(Library)
 InterfaceManager:SetLibrary(Library)
@@ -204,8 +191,8 @@ Window:SelectTab(1)
 
 -- Уведомление о загрузке скрипта
 Library:Notify{
-    Title = "Fluent",
-    Content = "The script has been loaded.",
+    Title = "DA-H",
+    Content = "Скрипт успешно загрузился!",
     Duration = 8
 }
 
