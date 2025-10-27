@@ -1,7 +1,7 @@
 # DA-H
 
-Идет ли работа над скриптом: Да
-Работает ли скрипт: по идее нет
+Идет ли работа над скриптом: Да<br>
+Работает ли скрипт: По идее да
 ### Скопируй, запусти, радуйся:
 ```lua
 loadstring(game:HttpGet("https://raw.githubusercontent.com/DaHawakere/DA-H/refs/heads/main/Service/loader.luau"))()
