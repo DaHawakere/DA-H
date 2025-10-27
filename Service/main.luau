@@ -1,5 +1,4 @@
 warn("DA-H // Привет!") -- Выводит приветственное сообщение в консоль
-gamename = ""
 
 -- Загружаем необходимые библиотеки
 local Library = loadstring(game:HttpGetAsync("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau"))() -- Библиотека Fluent для создания интерфейса
@@ -206,4 +205,5 @@ while wait(0.05) do
 
     MainParagraph:SetValue("Игра: Не поддержана" .. "\nИнфa:\nXП - " .. PlayerHuma.Health .. "/" .. PlayerHuma.MaxHealth .. " Скорость - " .. PlayerHuma.WalkSpeed .. " Сила прыжка - " .. PlayerHuma.JumpPower) 
 end
+
 
