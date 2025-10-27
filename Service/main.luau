@@ -53,7 +53,7 @@ Library:Notify{
 -- Создание параграфов с информацией в вкладке Main
 local MainParagraph = Tabs.Main:CreateParagraph("MainParagraph", {
     Title = "Здраствуй, " .. PlayerName, -- Заголовок параграфа
-    Content = "Игра: " .. "Не поддерживается" .. "\nИнфa:\nXП - " .. PlayerHuma.Health .. "/" .. PlayerHuma.MaxHealth .. " Скорость - " .. PlayerHuma.WalkSpeed .. " Сила прыжка - " .. PlayerHuma.JumpPower, -- Контент параграфа
+    Content = "Игра: " .. game.id .. "\nИнфa:\nXП - " .. PlayerHuma.Health .. "/" .. PlayerHuma.MaxHealth .. " Скорость - " .. PlayerHuma.WalkSpeed .. " Сила прыжка - " .. PlayerHuma.JumpPower, -- Контент параграфа
 })
 
 -- Кнопка для загрузки Plutonium Hub с подтверждением
@@ -206,3 +206,4 @@ while wait(0.05) do
 
     MainParagraph:SetValue("Игра: Не поддержана" .. "\nИнфa:\nXП - " .. PlayerHuma.Health .. "/" .. PlayerHuma.MaxHealth .. " Скорость - " .. PlayerHuma.WalkSpeed .. " Сила прыжка - " .. PlayerHuma.JumpPower) 
 end
+
